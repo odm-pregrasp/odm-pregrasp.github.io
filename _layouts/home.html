@@ -3,35 +3,371 @@
     {% include home-hero.html %}
 
     <main id="portfolio">
-      <div class="container">
+      <div class="container" style="margin-top: 0px;">
         <div class="row">
           <div class="col-md-12">
-
+            <div class="image-row" style="display: flex; justify-content: center;">
+              <img src="/img/task_figs/fig1-1.png" alt="Image 1" style="width: 30%;">
+              <img src="/img/task_figs/fig1-2.png" alt="Image 2" style="width: 30%;">
+              <img src="/img/task_figs/fig1-3.png" alt="Image 3" style="width: 30%;">
+            </div>
+            <div style="margin-bottom: 20px;"></div>
             {% if site.section_title != '' %}
-            <h2 class="section-title text-center">{{ site.section_title }}</h2>
+            <h1 class="section-title text-center">{{ site.section_title }}</h1>
             {% endif %}
             {% if site.section_subtitle != '' %}
             <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
             {% endif %}
-
-            <div class="break"></div>
-
-            {% for post in paginator.posts %}
-              <div class="wow fadeIn">
-              {% if post.position == "left" %}
-                {% include content-left.html %}
-              {% endif %}
-
-              {% if post.position == "right" %}
-                {% include content-right.html %}
-              {% endif %}
-              </div>
-            {% endfor %}
-
+            <div style="text-align: center;"> 
+              <p style="display: inline-block; text-align: justify; max-width: 1000px;">
+                {% if site.section_description != '' %}
+                {{ site.section_description }}
+                {% endif %}
+              </p>
+            </div>
             {% include pagination.html %}
 
           </div>
         </div>
+      </div>
+      <h1 class="section-title text-center">{{ "Experiment videos" }}</h1>
+      <h2 class="section-title text-center">{{ "Relocation" }}</h2>
+
+      <div class="content-wrap">
+
+        <div class="row post-row justify-content-center">
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_relocation/pregraspfree.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_relocation/dexgraspnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_relocation/tcdm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_relocation/ours.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        </div>
+      
+    
+      </div>
+
+      <div class="content-wrap">
+
+        <div class="row post-row justify-content-center">
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_relocation/pregraspfree.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_relocation/dexgraspnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_relocation/tcdm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_relocation/ours.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        </div>
+      
+    
+      </div>
+
+      <div class="content-wrap">
+
+        <div class="row post-row justify-content-center">
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_relocation/pregraspfree.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_relocation/dexgraspnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_relocation/tcdm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_relocation/ours.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        </div>
+      
+    
+      </div>
+
+      <h2 class="section-title text-center">{{ "Following trajectory" }}</h2>
+
+      <div class="content-wrap">
+
+        <div class="row post-row justify-content-center">
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_followtraj/pregraspfree.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_followtraj/dexgraspnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_followtraj/tcdm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_followtraj/ours.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        </div>
+      
+    
+      </div>
+
+      <div class="content-wrap">
+
+        <div class="row post-row justify-content-center">
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_followtraj/pregraspfree.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_followtraj/dexgraspnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_followtraj/tcdm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_followtraj/ours.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        </div>
+      
+    
+      </div>
+
+      <div class="content-wrap">
+
+        <div class="row post-row justify-content-center">
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_followtraj/pregraspfree.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_followtraj/dexgraspnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_followtraj/tcdm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_followtraj/ours.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        </div>
+      
+    
+      </div>
+
+      <h2 class="section-title text-center">{{ "Desired grasp" }}</h2>
+
+      <div class="content-wrap">
+
+        <div class="row post-row justify-content-center">
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_desiredgrasp/pregraspfree.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_desiredgrasp/dexgraspnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_desiredgrasp/tcdm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/hammer_desiredgrasp/ours.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        </div>
+      
+    
+      </div>
+
+      <div class="content-wrap">
+
+        <div class="row post-row justify-content-center">
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_desiredgrasp/pregraspfree.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_desiredgrasp/dexgraspnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_desiredgrasp/tcdm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/knife_desiredgrasp/ours.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        </div>
+      
+    
+      </div>
+
+      <div class="content-wrap">
+
+        <div class="row post-row justify-content-center">
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_desiredgrasp/pregraspfree.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_desiredgrasp/dexgraspnet.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_desiredgrasp/tcdm.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+          <div class="col-xs-12 col-md-3">
+            <video width="100%" controls>
+              <source src="/videos/flute_desiredgrasp/ours.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        </div>
+      
+    
       </div>
     </main>
 
