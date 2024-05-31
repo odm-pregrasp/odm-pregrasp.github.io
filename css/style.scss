@@ -49,7 +49,8 @@ article {
 
 p {
   line-height: 1.8;
-  font-size: 1.3em;
+  font-size: 1.5em;
+  font-weight: 580;
 }
 
 a {
@@ -248,7 +249,7 @@ button.btn, input.btn {
 }
 
 .content-wrap {
-  margin-bottom: 8em;
+  margin-bottom: 0em;
   @include bp-xsmall {
     margin-bottom: 2em;
   }

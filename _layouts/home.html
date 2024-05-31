@@ -7,21 +7,44 @@
         <div class="row">
           <div class="col-md-12">
             <div class="image-row" style="display: flex; justify-content: center;">
-              <img src="/img/task_figs/fig1-1.png" alt="Image 1" style="width: 28%;">
-              <img src="/img/task_figs/fig1-2.png" alt="Image 2" style="width: 28%;">
-              <img src="/img/task_figs/fig1-3.png" alt="Image 3" style="width: 28%;">
+              <figure style="margin: 0 1%; text-align: center;">
+                <img src="/img/task_figs/fig1-1.png" alt="Image 1" style="width: 100%;">
+                <figcaption style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">Relocation</figcaption>
+              </figure>
+              <figure style="margin: 0 1%; text-align: center;">
+                <img src="/img/task_figs/fig1-2.png" alt="Image 2" style="width: 100%;">
+                <figcaption style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">Following trajectory</figcaption>
+              </figure>
+              <figure style="margin: 0 1%; text-align: center;">
+                <img src="/img/task_figs/fig1-3.png" alt="Image 3" style="width: 100%;">
+                <figcaption style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">Desired grasp</figcaption>
+              </figure>
             </div>
-            <div style="margin-bottom: 20px;"></div>
-            {% if site.section_title != '' %}
-            <h1 class="section-title text-center">{{ site.section_title }}</h1>
+            <br><br>
+            {% if site.section_title1 != '' %}
+            <h1 class="section-title text-center">{{ site.section_title1 }}</h1>
             {% endif %}
             {% if site.section_subtitle != '' %}
             <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
             {% endif %}
             <div style="text-align: center;"> 
-              <p style="display: inline-block; text-align: justify; max-width: 1000px;">
-                {% if site.section_description != '' %}
-                {{ site.section_description }}
+              <p style="display: inline-block; text-align: justify; max-width: 1100px;">
+                {% if site.section_description1 != '' %}
+                {{ site.section_description1 }}
+                {% endif %}
+              </p>
+            </div>
+            <br><br>
+            {% if site.section_title2 != '' %}
+            <h1 class="section-title text-center">{{ site.section_title2 }}</h1>
+            {% endif %}
+            <div style="text-align: center;"> 
+              <img src="/img/paperpipeline.drawio.svg" alt="Image 4" style="width: 90%;">
+            </div>
+            <div style="text-align: center;"> 
+              <p style="display: inline-block; text-align: justify; max-width: 1100px;">
+                {% if site.section_description2 != '' %}
+                {{ site.section_description2 }}
                 {% endif %}
               </p>
             </div>
@@ -30,39 +53,60 @@
           </div>
         </div>
       </div>
-      <h1 class="section-title text-center">{{ "Experiment videos" }}</h1>
+      <br><br>
+      <h1 class="section-title text-center">{{ "Experiments" }}</h1>
+      <div style="text-align: center;"> 
+        <p style="display: inline-block; text-align: justify; max-width: 1100px;">
+          {% if site.section_description3 != '' %}
+          {{ site.section_description3 }}
+          {% endif %}
+        </p>
+      </div>
+      <br>
       <h2 class="section-title text-center">{{ "Relocation" }}</h2>
 
       <div class="content-wrap">
 
         <div class="row post-row justify-content-center">
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_relocation/pregraspfree.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Pre-grasp-free
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_relocation/dexgraspnet.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Dexgraspnet
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_relocation/tcdm.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              TCDM
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_relocation/ours.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Ours
+            </p>
           </div>
       
         </div>
@@ -74,32 +118,44 @@
 
         <div class="row post-row justify-content-center">
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_relocation/pregraspfree.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Pre-grasp-free
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_relocation/dexgraspnet.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Dexgraspnet
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_relocation/tcdm.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              TCDM
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_relocation/ours.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Ours
+            </p>
           </div>
       
         </div>
@@ -111,71 +167,95 @@
 
         <div class="row post-row justify-content-center">
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_relocation/pregraspfree.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Pre-grasp-free
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_relocation/dexgraspnet.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Dexgraspnet
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_relocation/tcdm.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              TCDM
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_relocation/ours.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Ours
+            </p>
           </div>
       
         </div>
       
     
       </div>
-
+      <br>
       <h2 class="section-title text-center">{{ "Following trajectory" }}</h2>
 
       <div class="content-wrap">
 
         <div class="row post-row justify-content-center">
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_followtraj/pregraspfree.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Pre-grasp-free
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_followtraj/dexgraspnet.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Dexgraspnet
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_followtraj/tcdm.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              TCDM
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_followtraj/ours.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Ours
+            </p>
           </div>
       
         </div>
@@ -187,32 +267,44 @@
 
         <div class="row post-row justify-content-center">
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_followtraj/pregraspfree.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Pre-grasp-free
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_followtraj/dexgraspnet.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Dexgraspnet
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_followtraj/tcdm.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              TCDM
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_followtraj/ours.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Ours
+            </p>
           </div>
       
         </div>
@@ -224,71 +316,96 @@
 
         <div class="row post-row justify-content-center">
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_followtraj/pregraspfree.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Pre-grasp-free
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_followtraj/dexgraspnet.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Dexgraspnet
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_followtraj/tcdm.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              TCDM
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_followtraj/ours.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Ours
+            </p>
           </div>
       
         </div>
       
     
       </div>
-
+      
+      <br>
       <h2 class="section-title text-center">{{ "Desired grasp" }}</h2>
 
       <div class="content-wrap">
 
         <div class="row post-row justify-content-center">
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_desiredgrasp/pregraspfree.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Pre-grasp-free
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_desiredgrasp/dexgraspnet.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Dexgraspnet
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_desiredgrasp/tcdm.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              TCDM
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/hammer_desiredgrasp/ours.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Ours
+            </p>
           </div>
       
         </div>
@@ -300,32 +417,44 @@
 
         <div class="row post-row justify-content-center">
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_desiredgrasp/pregraspfree.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Pre-grasp-free
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_desiredgrasp/dexgraspnet.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Dexgraspnet
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_desiredgrasp/tcdm.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              TCDM
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/knife_desiredgrasp/ours.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Ours
+            </p>
           </div>
       
         </div>
@@ -337,32 +466,44 @@
 
         <div class="row post-row justify-content-center">
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_desiredgrasp/pregraspfree.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Pre-grasp-free
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_desiredgrasp/dexgraspnet.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Dexgraspnet
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_desiredgrasp/tcdm.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              TCDM
+            </p>
           </div>
       
-          <div class="col-xs-12 col-md-3">
-            <video width="100%" controls>
+          <div class="col-xs-12 col-md-3"style="text-align: center;">
+            <video width="95%" controls>
               <source src="/videos/flute_desiredgrasp/ours.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            <p style="font-family: 'Open Sans'; font-size: 1.6em; font-weight: 700; color: #333; margin-top: 0px;">
+              Ours
+            </p>
           </div>
       
         </div>
