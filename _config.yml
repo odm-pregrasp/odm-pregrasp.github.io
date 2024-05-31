@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Learning&nbsp;Occluded&nbsp;Dexterous&nbsp;Manipulation<br>with&nbsp;Pre-grasp&nbsp;Pose"
-email: 'yuwanliu06@gmail.com'
+# email: 'yuwanliu06@gmail.com'
 source_description: "CoRL 2024"
-description: "Author1 Author2 Author3"
-university_description: "u1 u2 u3"
+description: ""#"Author1 Author2 Author3"
+university_description: ""#"u1 u2 u3"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://odm-pregrasp.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: 'jamigibbs'
