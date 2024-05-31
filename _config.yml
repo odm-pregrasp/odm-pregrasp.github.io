@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Learning&nbsp;Occluded&nbsp;Dexterous&nbsp;Manipulation<br>with&nbsp;Pre-grasp&nbsp;Pose"
+title: "Learning&nbsp;Occluded&nbsp;Dexterous&nbsp;Manipulation<br>with&nbsp;Pre-grasp&nbsp;Poses"
 # email: 'yuwanliu06@gmail.com'
 source_description: "CoRL 2024"
 description: ""#"Author1 Author2 Author3"
