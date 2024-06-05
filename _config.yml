@@ -20,9 +20,9 @@ description: ""#"Author1 Author2 Author3"
 university_description: ""#"u1 u2 u3"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://odm-pregrasp.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
-twitter_username: 'jamigibbs'
-github_username: 'jamigibbs'
-medium_username: 'blog.jamigibbs.com'
+# twitter_username: 'jamigibbs'
+# github_username: 'jamigibbs'
+# medium_username: 'blog.jamigibbs.com'
 section_title1: "Abstract"
 section_description1: "Due to the high Degree of Freedom (DoF) of dexterous hands, controlling them to complete manipulation tasks is highly challenging. With its robust data processing and outstanding learning capabilities, deep reinforcement learning (DRL) is widely employed to achieve dexterous manipulation tasks. However, the high DoF of dexterous hands also increases the exploration difficulty and thus leads to the DRL convergence problem. There is relevant research indicating that pre-grasp poses can help bypass the initial exploration phase and achieve grasping quickly, reducing task difficulty and addressing the DRL convergence problem. Nevertheless, current methods for acquiring pre-grasp poses have drawbacks such as high cost, low quality and a lack of consideration for using the same object to complete various tasks. In our paper, we design an automated method for generating task-free and object-specific pre-grasp poses of high quality based on desired grasps. A desired grasp is the hand pose of human daily object manipulation in the object coordinate system, which is not only the object designer's intended grasping manner but also the optimal way humans discover to grasp the object in different tasks after prolonged exploration. Utilizing the desired grasp information of an object to generate pre-grasp poses facilitates the rapid formation of a stable and task-conducive grasp pose during various tasks, reducing DRL convergence difficulty. We apply pre-grasp poses from our method to three dexterous manipulation tasks including the relocation task, the following trajectory task and the desired grasp task. The experimental results demonstrate that our pre-grasp poses effectively contribute to DRL convergence during these three tasks. The achieved performance ranks among the top, surpassing all other baselines or closely approaching the best-performing baseline. "
 section_title2: "Method"
